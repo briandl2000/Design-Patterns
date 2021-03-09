@@ -2,7 +2,7 @@
 
 void CommandList::AddCommand(Command* commmand)
 {
-	if (m_CommandPointer != m_Commands.size())
+	if (m_CommandPointer < m_Commands.size())
 	{
 		m_Commands.erase(m_Commands.begin() + m_CommandPointer, m_Commands.end());
 	}

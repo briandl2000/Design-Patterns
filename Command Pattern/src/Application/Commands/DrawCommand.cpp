@@ -13,9 +13,9 @@ DrawCommand::DrawCommand(std::vector<glm::vec2> locations, unsigned char* bitMap
 	for (auto location : m_StrokeLocations)
 	{
 		if      (location.x < minx) minx = location.x;
-		else if (location.x > maxx) maxx = location.x;
+		if (location.x > maxx) maxx = location.x;
 		if		(location.y < miny) miny = location.y;
-		else if (location.y > maxy) maxy = location.y;
+		if (location.y > maxy) maxy = location.y;
 	}
 	minx -= 10;
 	maxx += 10;
