@@ -1,0 +1,2 @@
+to use the command pattern you can draw anywhere on the screen using your mouse.
+you can use ctrl+z to undo a draw command and use ctrl+shift+z to redo a command.
